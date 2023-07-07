@@ -4,13 +4,13 @@ namespace Task.DbConnection;
 
 public class OracleConnection : DbConnection
 {
-     public OracleConnection(string connectionString) : base(connectionString)
+    public OracleConnection(string connectionString, TimeSpan timeout) : base(connectionString, timeout)
     {
-        
+
     }
     public override void Close()
     {
-          System.Console.WriteLine("Oracle connection is closed");
+        System.Console.WriteLine("Oracle connection is closed");
     }
 
     public override void Open()
@@ -25,11 +25,11 @@ public class OracleConnection : DbConnection
         Thread.Sleep(1000);
         sw.Stop();
 
-        if ( sw.Elapsed.Seconds > TimeOut.Seconds )
+        if (sw.Elapsed.Seconds > TimeOut.Seconds)
         {
             throw new Exception("Time out");
         }
-        else 
+        else
         {
             System.Console.WriteLine("Oracle connection is open");
         }
