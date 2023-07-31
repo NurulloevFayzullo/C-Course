@@ -5,9 +5,14 @@ using Infrastructure.Service;
 public class QuoteControllers : ControllerBase
 {
     private QuoteService connect;
-    public QuoteControllers()
+    public QuoteControllers(QuoteService connect)
     {
-        connect = new QuoteService();
+        this.connect = connect;
+    }
+    [HttpGet("GetCategoryId")]
+    public List<Quotes> GetCategoryId(int id)
+    {
+    return connect.GetCategoryId(id);
     }
 
     [HttpGet("GetQuotes")]

@@ -4,9 +4,9 @@ using Dapper;
 public class QuoteService
 {
     private DapperContext _connection;
-    public QuoteService()
+    public QuoteService(DapperContext connection)
     {
-        _connection = new DapperContext();
+        _connection = connection;
     }
 
     public List<Quotes> GetQuotes()
@@ -17,16 +17,30 @@ public class QuoteService
             return connection.Query<Quotes>(sql).ToList();
         }
     }
+    public List<Quotes> GetCategoryId(int id)
+    {
+        using (var connection = _connection.CreateConnection())
+        {
+            var sql = @"select q.id,q.author,q.quotetext,q.categoryid
+from quotes as q
+join categories as c
+on c.id=q.categoryid
+where q.categoryid=@id;";
+            var e = connection.Query<Quotes>(sql, new { id }).ToList();
+            return e;
+
+        }
+    }
     public Quotes GetRandomQuotes()
     {
-    using (var connection=_connection.CreateConnection())
-    {
-        var sql=@"SELECT id,author,quoteText,categoryid 
+        using (var connection = _connection.CreateConnection())
+        {
+            var sql = @"SELECT id,author,quoteText,categoryid 
                 FROM quotes
                 ORDER BY RANDOM()
                 LIMIT 1";
-                return connection.QuerySingleOrDefault<Quotes>(sql);
-    }
+            return connection.QuerySingleOrDefault<Quotes>(sql);
+        }
     }
     public Quotes AddQuotes(Quotes quotes)
     {

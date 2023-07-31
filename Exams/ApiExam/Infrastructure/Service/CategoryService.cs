@@ -4,9 +4,10 @@ using Dapper;
 public class CategoryService
 {
     private DapperContext _connection;
-    public CategoryService()
+    public CategoryService(DapperContext connection)
     {
-        _connection = new DapperContext();
+        _connection = connection;
+        
     }
 
     public List<Category> GetCategories()
@@ -15,20 +16,6 @@ public class CategoryService
         {
             var sql = @"Select * from categories order by id";
             return connection.Query<Category>(sql).ToList();
-        }
-    }
-    public List<Category> GetCategoryId(int id)
-    {
-        using (var connection = _connection.CreateConnection())
-        {
-            var sql = @"select q.id,q.author,c.name,q.QuoteText,q.Categoryid
-                from categories as c
-                join quotes as q
-                on c.id=q.categoryid
-                where q.categoryid=@id;";
-            var e= connection.Query<Category>(sql, new { id }).ToList();
-            return e;
-            
         }
     }
     public Category AddCategories(Category category)

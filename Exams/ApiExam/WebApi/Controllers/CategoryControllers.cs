@@ -5,9 +5,9 @@ using Domain.Classes;
 public class CategoryControllers : ControllerBase
 {
     private CategoryService connect;
-    public CategoryControllers()
+    public CategoryControllers(CategoryService connect)
     {
-        connect = new CategoryService();
+        this.connect = connect;
     }
 
     [HttpGet("GetCategories")]
@@ -20,11 +20,7 @@ public class CategoryControllers : ControllerBase
     {
         return connect.GetCategoriesById(id);
     }
-    [HttpGet("GetCategoryId")]
-    public List<Category> GetCategoryId(int id)
-    {
-    return connect.GetCategoryId(id);
-    }
+    
     [HttpPost("AddCategories")]
     public Category AddCategories(Category category)
     {
