@@ -10,39 +10,39 @@ public class QuoteControllers : ControllerBase
         this.connect = connect;
     }
     [HttpGet("GetCategoryId")]
-    public List<Quotes> GetCategoryId(int id)
+    public async Task<List<Quotes>> GetCategoryId(int id)
     {
-    return connect.GetCategoryId(id);
+    return await connect.GetCategoryId(id);
     }
 
     [HttpGet("GetQuotes")]
-    public List<Quotes> GetQuotes()
+    public async Task<List<Quotes>> GetQuotes()
     {
-        return connect.GetQuotes();
+        return await connect.GetQuotes();
     }
     [HttpGet("GetRandomQuotes")]
-    public Quotes GetRandomQuotes()
+    public async Task<Quotes> GetRandomQuotes()
     {
-        return connect.GetRandomQuotes();
+        return await connect.GetRandomQuotes();
     }
     [HttpGet("GetQuotesById")]
-    public Quotes GetQuotesById(int id)
+    public async Task<Quotes> GetQuotesById(int id)
     {
-        return connect.GetQuotesById(id);
+        return await connect.GetQuotesById(id);
     }
     [HttpPost("AddQuotes")]
-    public Quotes AddQuotes(Quotes quotes)
+    public async Task<GetQuoteDto> AddQuotes(AddQuoteDto quotes)
     {
-        return connect.AddQuotes(quotes);
+        return await connect.AddQuotes(quotes);
     }
     [HttpDelete("DeleteQuotes")]
-    public int DeleteQuotes(int id)
+    public async Task<int> DeleteQuotes(int id)
     {
-        return connect.DeleteQuotes(id);
+        return await connect.DeleteQuotes(id);
     }
     [HttpPut("UpdateQuotes")]
-    public Quotes UpdateQuotes(Quotes quotes)
+    public async Task<Quotes> UpdateQuotes(Quotes quotes)
     {
-        return connect.UpdateQuotes(quotes);
+        return await connect.UpdateQuotes(quotes);
     }
 }

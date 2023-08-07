@@ -2,6 +2,8 @@ using Infrastructure.Service;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IFileService,FileService>();
+builder.Services.AddScoped<FileService>();
 builder.Services.AddScoped<DapperContext>();
 builder.Services.AddScoped<CategoryService>();
 builder.Services.AddScoped<QuoteService>();

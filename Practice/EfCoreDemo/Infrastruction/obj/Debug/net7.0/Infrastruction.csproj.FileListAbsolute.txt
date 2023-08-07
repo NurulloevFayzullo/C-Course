@@ -1,0 +1,17 @@
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\bin\Debug\net7.0\Infrastruction.deps.json
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\bin\Debug\net7.0\Infrastruction.runtimeconfig.json
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\bin\Debug\net7.0\Infrastruction.dll
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\bin\Debug\net7.0\Infrastruction.pdb
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\bin\Debug\net7.0\Domain.dll
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\bin\Debug\net7.0\Domain.pdb
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\Infrastruction.csproj.AssemblyReference.cache
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\Infrastruction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\Infrastruction.AssemblyInfoInputs.cache
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\Infrastruction.AssemblyInfo.cs
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\Infrastruction.csproj.CoreCompileInputs.cache
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\Infrastruction.csproj.CopyComplete
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\Infrastruction.dll
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\refint\Infrastruction.dll
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\Infrastruction.pdb
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\Infrastruction.genruntimeconfig.cache
+C:\Users\fayz0\OneDrive\Desktop\C# Course\Practice\EfCoreDemo\Infrastruction\obj\Debug\net7.0\ref\Infrastruction.dll

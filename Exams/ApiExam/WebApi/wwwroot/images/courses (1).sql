@@ -1,0 +1,5 @@
+insert into courses (id, coursename, coursedescription, fee, duration, startdate, enddate, studentlimit) values (1, 'Theodoric', 'Moulding', 'tmoulding0@taobao.com', '20-443-1940', '2022-07-30', '2023-03-12', '20-868-2489');
+insert into courses (id, coursename, coursedescription, fee, duration, startdate, enddate, studentlimit) values (2, 'Win', 'Gurney', 'wgurney1@marketwatch.com', '48-795-6854', '2023-03-01', '2022-10-27', '52-988-2517');
+insert into courses (id, coursename, coursedescription, fee, duration, startdate, enddate, studentlimit) values (3, 'Hetty', 'Cheevers', 'hcheevers2@ftc.gov', '71-788-6809', '2023-03-20', '2022-11-01', '74-314-9435');
+insert into courses (id, coursename, coursedescription, fee, duration, startdate, enddate, studentlimit) values (4, 'Welsh', 'Runacres', 'wrunacres3@nasa.gov', '43-531-1479', '2022-08-18', '2022-08-17', '88-172-1441');
+insert into courses (id, coursename, coursedescription, fee, duration, startdate, enddate, studentlimit) values (5, 'Rikki', 'McVitie', 'rmcvitie4@cdc.gov', '07-965-4783', '2023-01-09', '2022-12-21', '94-148-2736');
