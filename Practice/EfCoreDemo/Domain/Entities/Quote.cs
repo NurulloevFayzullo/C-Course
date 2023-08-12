@@ -10,4 +10,6 @@ public class Quote
     public string QuoteText { get; set; }
     public string? ImageName { get; set; }
     public DateTime CreateAt { get; set; }
+    public int? CategoryId { get; set; }
+    public Category Category { get; set; }
 }
